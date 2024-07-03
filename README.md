@@ -1,4 +1,4 @@
-# Reva Laxmi Chauhan's Personal Website
+# My Personal Website
 https://revalaxmi.github.io/RevaLaxmi/
 
 Welcome to the repository for my personal website! This website showcases my interests, skills, projects, and work experience. It is a reflection of my journey as a Computer Science major with a passion for Artificial Intelligence, Machine Learning, Product Management, Full Stack Development, and Robotics.
