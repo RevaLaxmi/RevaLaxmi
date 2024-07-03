@@ -1,4 +1,5 @@
 # Reva Laxmi Chauhan's Personal Website
+https://revalaxmi.github.io/RevaLaxmi/
 
 Welcome to the repository for my personal website! This website showcases my interests, skills, projects, and work experience. It is a reflection of my journey as a Computer Science major with a passion for Artificial Intelligence, Machine Learning, Product Management, Full Stack Development, and Robotics.
 
@@ -26,13 +27,14 @@ This website serves as a portfolio to highlight my skills and projects, as well 
 - **Detailed Information**: Comprehensive sections for projects, skills, and work experience.
 - **Contact Form**: Easy way to reach out via email or WhatsApp.
 
-## Technologies Used
+## What all did I Use
 
 - **HTML5**
 - **CSS3**
 - **JavaScript**
 - **Flexbox and Grid Layout**
 - **GitHub Pages** for hosting
+- **Figma** to play around with the design and colors
 
 ## Sections
 
