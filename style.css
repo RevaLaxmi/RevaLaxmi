@@ -190,7 +190,7 @@ span{
     position: relative;
 }
 .text-animation span::before{
-    content: "Web developer";
+    content: "Fullstack programmer";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -212,19 +212,19 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Frontend Designer";
+        content: "Fullstack programmer";
     }
     21%,
     40%{
-        content:"Web Designer";
+        content:"Threat model designer";
     }
     41%,
     60%{
-        content: "UI / UX Designer";
+        content: "Automation programmer";
     }
     61%,
     80%{
-        content: "Web Developer";
+        content: "Bioinformatics Algorithm Developer";
     }
     81%,
     100%{
