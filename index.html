@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reva Laxmi's portfolio</title>
+    <title>responsive portfolio website </title>
     <link rel = "stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <canvas id="particleCanvas"></canvas>
+    <script src="particles.js"></script> <!-- Link to your JS file -->
 
     <header class="header">
         <a href="#home" class="logo"> Reva<span> Chauhan</span> </a>
@@ -24,13 +27,11 @@
     </header>
 
 
-
-
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span> Reva</span> </h1>
             <h3 class="text-animation">I'm a <span></span></h3>
-            <p>As a computer science graduate, I bring expertise in web and app development, full-stack programming, and security. I have experience in algorithm design, Hyperledger Fabric for secure solutions, and creating user-friendly interfaces. I am passionate about AI and ML and eager to learn and grow in these fields. I seek opportunities to leverage my skills and contribute to innovative projects.</p>
+            <p>I am a Computer Science graduate currently working as an AI Engineer. With experience in machine learning, real-time object detection, and blockchain solutions, I’ve developed AI models for applications like drone stabilization and secure data management. I am also a certified licensed drone pilot, enhancing my ability to work on UAV-related projects. Additionally, I hold certifications as an instructor in ballet and pole dancing. I am eager to contribute to innovative projects and continue growing in the AI field.</p>
 
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/reva-c-313813205?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BDC6a%2BfK0RTq8JJKXFjASJw%3D%3D"><i class='bx bxl-linkedin'></i></a>
@@ -40,7 +41,7 @@
             </div>
 
             <div class="btn-group">
-                <a href="RevaChauhan_CoverLetter.pdf" class="btn">Download CV</a>
+                <a href="C:\Users\Reva Laxmi Chauhan\Desktop\Revalaxmichauhansite\RevaChauhan_CV.pdf" class="btn">Download CV</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
@@ -48,57 +49,6 @@
                 <img src="yaaoowww.jpg" alt="">
             </div>
     </section>
-
-
-
-
-
-<!--
-    <section class="education" id="education">
-        <h2 class="heading"> Education</h2>
-
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021 </div>
-                <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique possimus amet atque, illum aspernatur nesciunt deserunt cum id perferendis aliquam corporis dolor ipsam nulla reprehenderit nostrum neque hic impedit!</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023</div>
-                <div class="timeline-content">
-                        <h3>Universe</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique possimus amet atque, illum aspernatur nesciunt deserunt cum id perferendis aliquam corporis dolor ipsam nulla reprehenderit nostrum neque hic impedit!</p>
-                    </div>
-                
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021 </div>
-                <div class="timeline-content">
-                        <h3>Internships</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique possimus amet atque, illum aspernatur nesciunt deserunt cum id perferendis aliquam corporis dolor ipsam nulla reprehenderit nostrum neque hic impedit!</p>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023 </div>
-                <div class="timeline-content">
-                        <h3>Job 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique possimus amet atque, illum aspernatur nesciunt deserunt cum id perferendis aliquam corporis dolor ipsam nulla reprehenderit nostrum neque hic impedit!</p>
-                    </div>
-            </div>
-        </div>
-
-    </section>
--->
 
 
     <section id="education" class="section education">
@@ -187,244 +137,111 @@
     </section>
 
 
-<!--
     <section class="projects" id="projects">
         <h2 class="heading">Projects</h2>
-
         <div class="projects-container">
             <div class="projects-box">
-                <div class="projects-info">
-                    <h4>UI Design</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nostrum debitis esse iste in quidem, excepturi quibusdam mollitia temporibus ipsa quasi itaque consequatur. Maxime numquam autem vitae. Neque, maxime facilis.</p>
-                </div>
+                <a href="https://example.com/project1">
+                    <img src="project1.jpg" alt="UI Design">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Blockchain & cryptocurrency</h4>
+                            <p>Developed a cryptocurrency website automation tool using Python and Selenium for efficient web scraping. The tool significantly reduced manual data extraction time and provided real-time updates on cryptocurrency trends and prices.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
             <div class="projects-box">
-                <div class="projects-info">
-                    <h4>Frontend Developer</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nostrum debitis esse iste in quidem, excepturi quibusdam mollitia temporibus ipsa quasi itaque consequatur. Maxime numquam autem vitae. Neque, maxime facilis.</p>
-                </div>
+                <a href="https://example.com/project2">
+                    <img src="project2.jpg" alt="Frontend Developer">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>UI</h4>
+                            <p>Remodeled website structure to highlight high-end products for a targeted audience, collaborating with a 6-person team. Developed responsive layouts for desktop and mobile devices, enhancing user experience and engagement.
+                                Acquired skills in Figma and Adobe XD for design, wireframing, and prototyping.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
             <div class="projects-box">
-                <div class="projects-info">
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nostrum debitis esse iste in quidem, excepturi quibusdam mollitia temporibus ipsa quasi itaque consequatur. Maxime numquam autem vitae. Neque, maxime facilis.</p>
-                </div>
+                <a href="https://example.com/project3">
+                    <img src="project3.jpeg" alt="Backend Development">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Database Analysis</h4>
+                            <p>Conducted database analysis and recommended optimizations to enhance frontend user interface for displaying user information. 
+                                Developed and implemented SQL databases to query recent transaction amounts and identify users with outstanding balances.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
             <div class="projects-box">
-                <div class="projects-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nostrum debitis esse iste in quidem, excepturi quibusdam mollitia temporibus ipsa quasi itaque consequatur. Maxime numquam autem vitae. Neque, maxime facilis.</p>
-                </div>
+                <a href="https://example.com/project4">
+                    <img src="project4.jpg" alt="Testing">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Threat Modelling</h4>
+                            <p>I developed a comprehensive threat model for the utilization of bio-information in human body applications. This model addresses the implementation and transmission of bio-genetic data, ensuring robust security measures to protect against potential threats and vulnerabilities.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
             <div class="projects-box">
-                <div class="projects-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nostrum debitis esse iste in quidem, excepturi quibusdam mollitia temporibus ipsa quasi itaque consequatur. Maxime numquam autem vitae. Neque, maxime facilis.</p>
-                </div>
+                <a href="https://example.com/project5">
+                    <img src="project5.png" alt="Testing">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Hyperledger Fabric</h4>
+                            <p>Designed and implemented a blockchain-based patient record system utilizing Hyperledger Fabric. This system ensures secure, decentralized storage and management of patient data, enhancing privacy across healthcare providers.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
             <div class="projects-box">
-                <div class="projects-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nostrum debitis esse iste in quidem, excepturi quibusdam mollitia temporibus ipsa quasi itaque consequatur. Maxime numquam autem vitae. Neque, maxime facilis.</p>
-                </div>
+                <a href="https://example.com/project6">
+                    <img src="project6.jpg" alt="Testing">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Restaurant management system</h4>
+                            <p>I developed a restaurant management system incorporating fundamental Data Structures and Algorithms (DSA) principles, leveraging pointers, C++ programming, and basic frontend technologies. This system streamlines operations, optimizes resource management, and enhances customer service through efficient data handling and intuitive user interfaces.</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-
-        </div>
-    </section>
--->
-
-
-
-
-    <section class="projects" id="projects">
-    <h2 class="heading">Projects</h2>
-    <div class="projects-container">
-        <div class="projects-box">
-            <a href="https://github.com/RevaLaxmi/CryptoHashingWebscraper">
-                <img src="project1.jpg" alt="UI Design">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Blockchain & cryptocurrency</h4>
-                        <p>Developed a cryptocurrency website automation tool using Python and Selenium for efficient web scraping. The tool significantly reduced manual data extraction time and provided real-time updates on cryptocurrency trends and prices.</p>
+            <div class="projects-box">
+                <a href="https://example.com/project7">
+                    <img src="project7.jpg" alt="Testing">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>full-stack</h4>
+                            <p>I designed and developed the complete UI/UX for a large-scale Valentine's Day project, creating over 200 personalized invitations and greetings from scratch. This project involved automation, CSS, HTML, JavaScript, and design skills to ensure each invitation was unique and tailored, featuring personalized designs and links.</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href=" ">
-                <img src="project2.jpg" alt="Frontend Developer">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>UI</h4>
-                        <p>Remodeled website structure to highlight high-end products for a targeted audience, collaborating with a 6-person team. Developed responsive layouts for desktop and mobile devices, enhancing user experience and engagement.
-                            Acquired skills in Figma and Adobe XD for design, wireframing, and prototyping.</p>
+                </a>
+            </div>
+            <div class="projects-box">
+                <a href="https://example.com/project8">
+                    <img src="project8.png" alt="Testing">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Wireframing</h4>
+                            <p>During my internship at Heads Up For Tails, I learnt the wireframing for an entire functional website and also handled backend programming to ensure its full functionality.</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href=" ">
-                <img src="project3.jpeg" alt="Backend Development">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Database Analysis</h4>
-                        <p>Conducted database analysis and recommended optimizations to enhance frontend user interface for displaying user information. 
-                            Developed and implemented SQL databases to query recent transaction amounts and identify users with outstanding balances.</p>
+                </a>
+            </div>
+            <div class="projects-box">
+                <a href="https://example.com/project9">
+                    <img src="project9.jpg" alt="Testing">
+                    <div class="overlay">
+                        <div class="projects-info">
+                            <h4>Algorithm design</h4>
+                            <p>Attempted the closest pair problem by designing and implementing an efficient algorithm. Developed a functional 3D design and corresponding code to enhance the solution's practical application.</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href="https://example.com/project4">
-                <img src="project4.jpg" alt="Testing">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Threat Modelling</h4>
-                        <p>I developed a comprehensive threat model for the utilization of bio-information in human body applications. This model addresses the implementation and transmission of bio-genetic data, ensuring robust security measures to protect against potential threats and vulnerabilities.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href="https://github.com/RevaLaxmi/Blockchain-Patient-Record-System">
-                <img src="project5.png" alt="Testing">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Hyperledger Fabric</h4>
-                        <p>Designed and implemented a blockchain-based patient record system utilizing Hyperledger Fabric. This system ensures secure, decentralized storage and management of patient data, enhancing privacy across healthcare providers.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href="https://github.com/RevaLaxmi/Restaurant-Management-System-">
-                <img src="project6.jpg" alt="Testing">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Restaurant management system</h4>
-                        <p>I developed a restaurant management system incorporating fundamental Data Structures and Algorithms (DSA) principles, leveraging pointers, C++ programming, and basic frontend technologies. This system streamlines operations, optimizes resource management, and enhances customer service through efficient data handling and intuitive user interfaces.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href="https://github.com/RevaLaxmi/34.github.io">
-                <img src="project7.jpg" alt="Testing">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>full-stack</h4>
-                        <p>I designed and developed the complete UI/UX for a large-scale Valentine's Day project, creating over 200 personalized invitations and greetings from scratch. This project involved automation, CSS, HTML, JavaScript, and design skills to ensure each invitation was unique and tailored, featuring personalized designs and links.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href="https://example.com/project8">
-                <img src="project8.png" alt="Testing">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Wireframing</h4>
-                        <p>During my internship at Heads Up For Tails, I learnt the wireframing for an entire functional website and also handled backend programming to ensure its full functionality.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="projects-box">
-            <a href="https://github.com/RevaLaxmi/Closest-Pair">
-                <img src="project9.jpg" alt="Testing">
-                <div class="overlay">
-                    <div class="projects-info">
-                        <h4>Algorithm design</h4>
-                        <p>Attempted the closest pair problem by designing and implementing an efficient algorithm. Developed a functional 3D design and corresponding code to enhance the solution's practical application.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-    <!--
-    <section class="testimonials" id="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
-
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="1.jpeg" alt="">
-                    <h2>Marilyn</h2>
-                    <div class="'rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus hic ipsam possimus dolor corrupti neque dolore laboriosam impedit inventore. Non totam ratione facilis nobis. Quae dicta et labore distinctio soluta."</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="2.jpg" alt="">
-                    <h2>Julia</h2>
-                    <div class="'rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus hic ipsam possimus dolor corrupti neque dolore laboriosam impedit inventore. Non totam ratione facilis nobis. Quae dicta et labore distinctio soluta."</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="3.jpg" alt="">
-                    <h2>Rebecca</h2>
-                    <div class="'rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus hic ipsam possimus dolor corrupti neque dolore laboriosam impedit inventore. Non totam ratione facilis nobis. Quae dicta et labore distinctio soluta."</p>
-                </div>
+                </a>
             </div>
         </div>
-    </section>
-    -->
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-    
-        <form action="http://localhost:3000/submit-form" method="post">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="full_name" placeholder="Full name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="input-box">
-                    <input type="number" name="phone_number" placeholder="Phone Number">
-                    <input type="text" name="subject" placeholder="Subject">
-                </div>
-            </div>
-    
-            <div class="input-group-2">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
     </section>
     
 
@@ -435,32 +252,22 @@
             <a href="mailto:reva.chauhan1@gmail.com"><i class='bx bxl-gmail'></i></a>
         </div>
 
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
+        <p class="copyright">
+            Email: <a href="mailto:Reva.chauhan1@gmail.com">Reva.chauhan1@gmail.com</a> | 
+            Phone: <a href="tel:+919773639004">+91 9773639004</a> | 
+            Instagram: <a href="https://www.instagram.com/revalaxmii" target="_blank">@revalaxmii</a>
+        </p>
 
-            <li>
-                <a href="#">Services</a>
-            </li>
-
-            <li>
-                <a href="#">About Me</a>
-            </li>
-
-            <li>
-                <a href="#">Contact</a>
-            </li>
-
-            <li>
-                <a href="#">Testimonials</a>
-            </li>
-        </ul>
+    
         <p class="copyright">
             Reva Chauhan | All rights reserved
         </p>
+        
     </footer>
 
     <script src="script.js"></script>
+
+
+
 </body>
 </html>
