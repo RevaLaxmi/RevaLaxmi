@@ -23,3 +23,16 @@ menuIcon.oneclick = ()=> {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+    document.querySelector('.navbar').classList.toggle('active');
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+});
+
+
